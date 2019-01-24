@@ -1,1 +1,1 @@
-web: gunicorn app:apop
+web: gunicorn conf.wsgi
