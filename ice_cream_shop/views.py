@@ -3,14 +3,13 @@ from django.views.generic import TemplateView
 
 from .models import IceCream
 
-
 class Home(TemplateView):
     template_name = 'home.html'
 
     def get_context_data(self, **kwargs):
-        daily_creams = IceCream.objects.filter(available='daily')
-        weekly_creams = IceCream.objects.filter(available='weekly')
-        seasonal_creams = IceCream.objects.filter(available='seasonal')
+        daily_creams = IceCream.objects.filter(available='Daily')
+        weekly_creams = IceCream.objects.filter(available='Weekly')
+        seasonal_creams = IceCream.objects.filter(available='Seasonal')
         featured_creams = IceCream.objects.filter(featured=True)
 
         context = {
@@ -20,10 +19,9 @@ class Home(TemplateView):
             'featured': featured_creams,
         }
 
+
+
         return context
-
-
-
 
     # daily = ['pumpkin', 'butter pecan']
     # weekly = ['blueberry cheesecake', 'almond chocolate coconut']

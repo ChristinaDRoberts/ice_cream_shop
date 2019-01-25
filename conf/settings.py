@@ -43,7 +43,8 @@ SECRET_KEY = '4f*3z*qopf8l!^tn$(36d6-(66j6g^r(i24kxcq#^$4#jti(*2'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost', 'ice-cream-shop.herokuapp.com'
+    'localhost',
+    'ice-cream-shop.herokuapp.com/'
 ]
 
 

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+        <div class="dailies">
+            <h1>Daily Flavor</h1>
+                {% for item in daily %}
+                    <h4>{{ item.flavor }}</h4>
+                    <h4>{{ item.base }}</h4>
+                {% endfor %}
+        </div>
+
+        <div class="weeklies">
+            <h1>Our Weekly Flavors</h1>
+                {% for item in weekly %}
+                    <h4>{{ item.flavor }}</h4>
+                    <h4>{{ item.base }}</h4>
+
+                    {% endfor %}
+        </div>
+
+        <div class="seasonals">
+            <h1>Seasonal Flavors</h1>
+                {% for item in seasonal %}
+                    <h4>{{ item.flavor }}</h4>
+                    <h4>{{ item.base }}</h4>
+                    {% endfor %}
+        </div>
+
+
+        <div class="features">
+            <h1>Featured</h1>
+                {% for item in featured %}
+                    <h4>{{ item.flavor }}</h4>
+                    <h4>{{ item.base }}</h4>
+                    {% endfor %}
+        </div>
+
+{% endblock %}
+
