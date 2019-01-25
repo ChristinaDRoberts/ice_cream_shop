@@ -1,3 +1,30 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
-# Create your views here.
+from .models import IceCream
+
+
+class Home(TemplateView):
+    template_name = 'home.html'
+
+    def get_context_data(self, **kwargs):
+        daily_creams = IceCream.objects.filter(available='daily')
+        weekly_creams = IceCream.objects.filter(available='weekly')
+        seasonal_creams = IceCream.objects.filter(available='seasonal')
+        featured_creams = IceCream.objects.filter(featured=True)
+
+        context = {
+            'daily': daily_creams,
+            'weekly': weekly_creams,
+            'seasonal': seasonal_creams,
+            'featured': featured_creams,
+        }
+
+        return context
+
+
+
+
+    # daily = ['pumpkin', 'butter pecan']
+    # weekly = ['blueberry cheesecake', 'almond chocolate coconut']
+    # seasonal = ['toffee bar', 'banana nut bread']
