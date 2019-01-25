@@ -1,6 +1,5 @@
 div{
     border: 5px dashed blue;
-
     margin:10px;
     text-align: center;
 }
@@ -23,6 +22,6 @@ body{
     color: lightseagreen;
 }
 
-h1{
-    
+.base{
+    font-style: italic;
 }
