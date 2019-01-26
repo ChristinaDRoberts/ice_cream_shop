@@ -9,6 +9,8 @@ section{
     width: 70%;
     margin: 0 auto;
     color: black;
+    border: 2px solid black;
+    margin-top: 30px;
 
 }
 
@@ -41,8 +43,16 @@ div.transbox {
 
 }
 
-.headings{
+.headings {
     font-weight: bold;
     border: 2px solid dimgrey;
 
+}
+
+header{
+    border: 2px solid black;
+    width: 70%;
+    background-color: lightcyan;
+    text-align: center;
+    margin:0 auto
 }
