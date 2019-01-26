@@ -33,8 +33,15 @@ img{
 }
 
 div.transbox {
-    margin: 30px;
+    margin: 0 auto;
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.6;
+    width: 65%;
+
+}
+
+.headings{
+    font-weight: bold;
+
 }
