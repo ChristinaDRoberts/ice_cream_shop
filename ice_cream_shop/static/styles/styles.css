@@ -1,12 +1,14 @@
 div{
-    border: 5px dashed blue;
+    /*border: 5px dashed blue;*/
     margin:10px;
     text-align: center;
 }
 
-body{
-    width: 60%;
+section{
+    background: url("../images/bg.jpg")no-repeat top/cover;
+    width: 70%;
     margin: 0 auto;
+    color: black;
 
 }
 
@@ -24,4 +26,15 @@ body{
 
 .base{
     font-style: italic;
+}
+
+img{
+    opacity: 0.5;
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
 }

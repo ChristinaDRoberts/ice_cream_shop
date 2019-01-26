@@ -3,20 +3,25 @@
 
 {% block content %}
 
-
+    <section>
+    <div class="transbox">
         <div class="dailies">
             <h1>Daily Flavor</h1>
                 {% for item in daily %}
+                    <hr/>
                     <h4>{{ item.flavor }}</h4>
                     <h4 class="base">base flavor - {{ item.base }}</h4>
+                    <hr>
                 {% endfor %}
         </div>
 
         <div class="weeklies">
             <h1>Our Weekly Flavors</h1>
                 {% for item in weekly %}
+                    <hr/>
                     <h4>{{ item.flavor }}</h4>
                     <h4 class="base">base flavor - {{ item.base }}</h4>
+                    <hr/>
 
                     {% endfor %}
         </div>
@@ -24,8 +29,10 @@
         <div class="seasonals">
             <h1>Seasonal Flavors</h1>
                 {% for item in seasonal %}
+                    <hr>
                     <h4>{{ item.flavor }}</h4>
                     <h4 class="base">base flavor - {{ item.base }}</h4>
+                    </hr>
                     {% endfor %}
         </div>
 
@@ -33,10 +40,13 @@
         <div class="features">
             <h1>Featured</h1>
                 {% for item in featured %}
+                    <hr/>
                     <h4>{{ item.flavor }}</h4>
                     <h4 class="base">base flavor - {{ item.base }}</h4>
+                    <hr/>
                     {% endfor %}
         </div>
-
+    </div>
+    </section>
 {% endblock %}
 
